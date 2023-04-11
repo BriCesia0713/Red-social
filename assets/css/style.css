@@ -39,7 +39,8 @@ header {
     width: 100%;
     background: linear-gradient(274.88deg, #d99ddb 4.97%, #defafa 98.41%);
     position: sticky;
-    opacity: 0.4;
+    opacity: 0.6;
+  color:black;
     top: 0;
     z-index: 300;
 }
@@ -811,6 +812,8 @@ header label:hover {
 #slide-2:checked ~ .control-2 ~ .slide-indicador 
       li:nth-child(2) .slide-circulo,
 #slide-3:checked ~ .control-3 ~ .slide-indicador 
-      li:nth-child(3) .slide-circulo {
+      li:nth-child(3) .slide-circulo,
+#slide-4:checked ~ .control-3 ~ .slide-indicador 
+      li:nth-child(4) .slide-circulo{
     color: #428bca;
 }

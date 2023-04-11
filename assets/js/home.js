@@ -1,4 +1,5 @@
-export const header=`<header>
+export const header = `<header>
+<link rel="stylesheet" href="assets/css/styleMain.css">
                 <nav class="navbar navbar-expand-lg py-2">
                     <div class="container-fluid">
                     <a class="navbar-brand" href="#" id="nombre-user">      
@@ -24,9 +25,10 @@ export const header=`<header>
                     </div>
                     </div>
                 </nav>
+                
             </header>`;
 
-export const main=`
+export const main = `
 <div class="container-main">
   <div class="general-information">
 
@@ -66,7 +68,52 @@ export const main=`
     </div>
   </div>
 </div>
+<div class="slide">
+            <div class="slide-inner">
+              <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
+                checked="checked">
+              <div class="slide-item">
+                <img src="assets/img/seoulgif.gif">
+              </div>
+              <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+              <div class="slide-item">
+                <img src="assets/img/gifgoblin.gif">
+              </div>
+              <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+              <div class="slide-item">
+                <img src="assets/img/jisoogif.gif">
+              </div>
+              <input class="slide-open" type="radio" id="slide-4" name="slide" aria-hidden="true" hidden="">
+              <div class="slide-item">
+                <img src="assets/img/btsgif.gif">
+              </div>
+              <label for="slide-4" class="slide-control prev control-3">‹</label>
+              <label for="slide-3" class="slide-control next control-4">›</label>
+              <label for="slide-1" class="slide-control next control-2">›</label>
+              <label for="slide-1" class="slide-control prev control-4">‹</label>
+              <label for="slide-2" class="slide-control next control-3">›</label>
+              <label for="slide-2" class="slide-control prev control-1">‹</label>
+              <label for="slide-3" class="slide-control prev control-2">‹</label>
+              <label for="slide-4" class="slide-control next control-1">›</label>
+
+              <ol class="slide-indicador">
+                <li>
+                  <label for="slide-1" class="slide-circulo">•</label>
+                </li>
+                <li>
+                  <label for="slide-2" class="slide-circulo">•</label>
+                </li>
+                <li>
+                  <label for="slide-3" class="slide-circulo">•</label>
+                </li>
+                <li>
+                  <label for="slide-4" class="slide-circulo">•</label>
+                </li>
+              </ol>
+            </div>
+          </div>
     </div>
   </div>
   </div>
+  
 </div>`;

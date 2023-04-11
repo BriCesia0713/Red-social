@@ -1,6 +1,10 @@
 /*--------------Estilo muro de usuario----------------*/
 body{
-  
+    background-image: url(https://i.pinimg.com/originals/86/48/99/86489954bc1c07e2df7aadc7fb6eff5d.gif);
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .section-main {
@@ -13,6 +17,7 @@ body{
     max-width: 1300px;
     padding: 0px 50px;
     margin: 20px auto;
+  position:left;
 }
 
 .general-information {
@@ -196,7 +201,7 @@ figure img {
     width: 800px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 }
 
 .new-post {
@@ -241,8 +246,8 @@ figure img {
 
 .container-functions {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
+    align-items: left;
 }
 
 .camera-privacity {
@@ -303,7 +308,7 @@ figure img {
     background: linear-gradient(299.01deg, rgba(186, 12, 223, 0.5) 4.97%, rgba(6, 242, 193, 0.5) 98.41%);
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: left;
     position: relative;
 }
 
@@ -888,6 +893,7 @@ body::-webkit-scrollbar-track:active {
     .container-post {
         width: 95%;
         margin: 0;
+      
     }
 
     figure img {
@@ -919,5 +925,106 @@ body::-webkit-scrollbar-track:active {
     }
 
 }
+.slide {
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 6px;
+    width: 450px;
+    display:flex;
+      
+}
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    height: calc( 400px + 3em);
+  align-items:flex-end;
+}
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+.slide-item {
+    position:absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+  
+}
+.slide-item img {
+    display: block;
+    height: 450px;
+    width: 450px;
+  position:relative;
+}
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+.slide-control.prev {
+    left: 2%;
+}
+.slide-control.next {
+    right: 2%;
+}
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3,
+#slide-4:checked ~ .control-4  {
+    display: block;
+}
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo,
+#slide-4:checked ~ .control-3 ~ .slide-indicador 
+      li:nth-child(4) .slide-circulo{
+    color: #7a46c8;
+}
+  
 
 /* estilos de seccion oculta, de cuando el usuario ingresaa su perfil*/

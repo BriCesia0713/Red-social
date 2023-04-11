@@ -15,7 +15,7 @@ export const header=`<header>
                                 Perfil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active navbar-brand" aria-current="page" href="#">&lt;CoderPlace/&gt;</a>
+                            <a class="nav-link active navbar-brand" aria-current="page" href="#">SarangKorea</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Logout</a>

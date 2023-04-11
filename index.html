@@ -1,137 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta name="viewport"
-  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SarangKorea</title>
-    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SarangKorea</title>
+  <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/styleMain.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
 </head>
+
 <body id="bodyIn">
-    <header id="header"></header>
-    <main id="main"><div class="center">
-    <div id="main" class="main logged-out">
-      <section class="index-img-message">
-        <br>
-        <div class="slide">
-          <div class="slide-inner">
-            <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked">
-            <div class="slide-item">
-              <img src="assets/img/goblin.jpg">
+  <header id="header"></header>
+  <main id="main">
+    <div class="center">
+      <div id="main" class="main logged-out">
+        <section class="index-img-message">
+          <br>
+          <div class="slide">
+            <div class="slide-inner">
+              <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
+                checked="checked">
+              <div class="slide-item">
+                <img src="assets/img/goblin.jpg">
+              </div>
+              <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+              <div class="slide-item">
+                <img src="assets/img/txt.jpg">
+              </div>
+              <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+              <div class="slide-item">
+                <img src="assets/img/BTS.jpg">
+              </div>
+              <input class="slide-open" type="radio" id="slide-4" name="slide" aria-hidden="true" hidden="">
+              <div class="slide-item">
+                <img src="assets/img/new_jeans.jpg">
+              </div>
+              <label for="slide-4" class="slide-control prev control-3">‹</label>
+              <label for="slide-3" class="slide-control next control-4">‹</label>
+              <label for="slide-1" class="slide-control next control-2">‹</label>
+              <label for="slide-1" class="slide-control prev control-4">‹</label>
+              <label for="slide-2" class="slide-control next control-3">›</label>
+              <label for="slide-2" class="slide-control prev control-1">‹</label>
+              <label for="slide-3" class="slide-control prev control-2">‹</label>
+              <label for="slide-4" class="slide-control next control-1">‹</label>
+
+              <ol class="slide-indicador">
+                <li>
+                  <label for="slide-1" class="slide-circulo">•</label>
+                </li>
+                <li>
+                  <label for="slide-2" class="slide-circulo">•</label>
+                </li>
+                <li>
+                  <label for="slide-3" class="slide-circulo">•</label>
+                </li>
+                <li>
+                  <label for="slide-4" class="slide-circulo">•</label>
+                </li>
+              </ol>
             </div>
-            <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
-            <div class="slide-item">
-              <img src="assets/img/txt.jpg">
-            </div>
-            <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
-            <div class="slide-item">
-              <img src="assets/img/BTS.jpg">
-            </div>
-            <input class="slide-open" type="radio" id="slide-4" name="slide" aria-hidden="true" hidden="">
-            <div class="slide-item">
-              <img src="assets/img/new_jeans.jpg">
-            </div> 
-            <label for="slide-4" class="slide-control prev control-3">‹</label>
-            <label for="slide-3" class="slide-control next control-4">‹</label>
-            <label for="slide-1" class="slide-control next control-2">‹</label>
-            <label for="slide-1" class="slide-control prev control-4">‹</label>
-            <label for="slide-2" class="slide-control next control-3">›</label>
-            <label for="slide-2" class="slide-control prev control-1">‹</label>
-            <label for="slide-3" class="slide-control prev control-2">‹</label>
-            <label for="slide-4" class="slide-control next control-1">‹</label>
-        
-            <ol class="slide-indicador">
-              <li>
-                <label for="slide-1" class="slide-circulo">•</label>
-              </li>
-              <li>
-                <label for="slide-2" class="slide-circulo">•</label>
-              </li>
-              <li>
-                <label for="slide-3" class="slide-circulo">•</label>
-              </li>
-              <li>
-                <label for="slide-4" class="slide-circulo">•</label>
-              </li>
-            </ol>
           </div>
-        </div>
-        <script src="assets/js/carrucel.js"></script>
-        <!--cambiar por <p>-->
-        <p class="index-message">En SARANGKOREA encontrarás el contenido que está marcando tendencia en el mundo coreano. 
-          Además podrás comunicarte y compartir con los Klovers de la página. Que esperas para ingresar!</p>
-      </section>
-      <section class="card-login logged-out">
-        <div>
-         <!-- <img src="assets/img/social-network.png" alt="social network" class="img-login-mobile">-->
-          <div class="icon-coderplace">
-            <img src="assets/img/icon.png" alt="Ícono CoderPlace">
-            <h1>SarangKorea</h1>
-          </div>
-          <h4 class="welcome">¡Bienvenid@ Klover!</h4>
-        </div>
-        <div class="container-inputs">
-          <form id="login-form">
-    <input type="email" placeholder="Correo" class="input-login" id="email" >
-    <input type="password" placeholder="Contraseña" class="input-login" id="password">
-    <button type="submit" class="log-in" id="btnLogIn">Iniciar Sesión</button>
-  </form>
-    <p>O bien ingresa con...</p>
-    <div class="rrss">
-      <img src="assets/img/facebook.png" alt="Ícono Facebook" id="btnFacebook">
-      <img src="assets/img/google.png" alt="Ícono google" id="btnGoogle">
-    </div></div>
-        <span class="alertLogInSignUp" id="alertLogInSignUp"></span>
-        <div class="register">
-    <p>¿No tienes una cuenta?<a id="Registrar" href="#/signup">Regístrate</a></p></div>
-      </section>
-      <section class="card-signUp logged-out">
-        <div>
-          <div class="icon-coderplace">
-            <img src="assets/img/icono-coderplace.png" alt="Ícono CoderPlace">
-            <h1>SarangKorea</h1>
-          </div>
-          <h4 class="welcome">¡Registrate!</h4>
-        </div>
-        <div class="container-inputs">
-          <form id="signup-form">
-            <input type="text" placeholder="Nombres y Apellidos" class="input-login" id="signup-names" autocomplete="off">
-            <input type="email" placeholder="Correo" class="input-login" id="signup-email" autocomplete="off">
-            <input type="password" placeholder="Contraseña" class="input-login" id="signup-password">
-            <div class="terms">
-              <input type="checkbox" id="termConditions" class="termConditions" />
-              <label for="termConditions">Acepto los <a href="assets/doc/sarangkorea_terminos_y_condiciones.pdf" target="_blank">Términos, Condiciones y Política de Privacidad.</a></label>
+          <script src="assets/js/carrucel.js"></script>
+          <!--cambiar por <p>-->
+          <p class="index-message">En SARANGKOREA encontrarás el contenido que está marcando tendencia en el mundo
+            coreano.
+            Además podrás comunicarte y compartir con los Klovers de la página. Que esperas para ingresar!</p>
+        </section>
+        <section class="card-login logged-out">
+          <div>
+            <!-- <img src="assets/img/social-network.png" alt="social network" class="img-login-mobile">-->
+            <div class="icon-coderplace">
+              <img src="assets/img/icon.png" alt="Ícono CoderPlace">
+              <h1>SarangKorea</h1>
             </div>
-            <button type="submit" class="sign-up" id="btnSignUp">Registrarse</button>
-         </form>
-        </div>
-        <span class="alertLogInSignUp" id="alertLogInSignUp"></span>
-        <div class="register">
-          <p>¿Ya tienes una cuenta?<a id="InicioSesion" href='#/home,js'>Inicia Sesión</a></p>
-      </section>
-      
+            <h4 class="welcome">¡Bienvenid@ Klover!</h4>
+          </div>
+          <div class="container-inputs">
+            <form id="login-form">
+              <input type="email" placeholder="Correo" class="input-login" id="email">
+              <input type="password" placeholder="Contraseña" class="input-login" id="password">
+              <button type="submit" class="log-in" id="btnLogIn">Iniciar Sesión</button>
+            </form>
+            <p>O bien ingresa con...</p>
+            <div class="rrss">
+              <img src="assets/img/facebook.png" alt="Ícono Facebook" id="btnFacebook">
+              <img src="assets/img/google.png" alt="Ícono google" id="btnGoogle">
+            </div>
+          </div>
+          <span class="alertLogInSignUp" id="alertLogInSignUp"></span>
+          <div class="register">
+            <p>¿No tienes una cuenta?<a id="Registrar" href="#/signup">Regístrate</a></p>
+          </div>
+        </section>
+        <section class="card-signUp logged-out">
+          <div>
+            <div class="icon-coderplace">
+              <img src="assets/img/icon.png" alt="Ícono CoderPlace">
+              <h1>SarangKorea</h1>
+            </div>
+            <h4 class="welcome">¡Registrate!</h4>
+          </div>
+          <div class="container-inputs">
+            <form id="signup-form">
+              <input type="text" placeholder="Nombres y Apellidos" class="input-login" id="signup-names"
+                autocomplete="off">
+              <input type="email" placeholder="Correo" class="input-login" id="signup-email" autocomplete="off">
+              <input type="password" placeholder="Contraseña" class="input-login" id="signup-password">
+              <div class="terms">
+                <input type="checkbox" id="termConditions" class="termConditions" />
+                <label for="termConditions">Acepto los <a href="assets/doc/sarangkorea_terminos_y_condiciones.pdf"
+                    target="_blank">Términos, Condiciones y Política de Privacidad.</a></label>
+              </div>
+              <button type="submit" class="sign-up" id="btnSignUp">Registrarse</button>
+            </form>
+          </div>
+          <span class="alertLogInSignUp" id="alertLogInSignUp"></span>
+          <div class="register">
+            <p>¿Ya tienes una cuenta?<a id="InicioSesion" href='#/home,js'>Inicia Sesión</a></p>
+        </section>
+
+      </div>
     </div>
-  </div></main>
-  
-    <script src="https://kit.fontawesome.com/7e57db430e.js" crossorigin="anonymous"></script>
-    <!-- CDN Bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <!-- CDN jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <!-- Se agrega el CDN de Firebase, agregar los demas CDN (jquery y bootstrap)-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-        <!-- js personalizado -->
-        
-        <script type="module"src="main.js"></script>
-        <script src="assets/js/script.js"></script>
-        <script src="assets/js/home.js" type="module"></script>
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-  </body>
+  </main>
+
+  <script src="https://kit.fontawesome.com/7e57db430e.js" crossorigin="anonymous"></script>
+  <!-- CDN Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- CDN jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <!-- Se agrega el CDN de Firebase, agregar los demas CDN (jquery y bootstrap)-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <!-- js personalizado -->
+
+  <script type="module" src="main.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/home.js" type="module"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</body>
+
 </html>
